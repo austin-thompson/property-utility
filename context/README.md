@@ -20,4 +20,6 @@ It preserves product intent, architecture decisions, and stable domain concepts 
 
 The following documents are normative unless superseded by an accepted ADR: PRODUCT.md, ARCHITECTURE.md, ROADMAP.md, DATA_MODEL.md, DATA_SOURCES.md, API_DESIGN.md, METRICS.md, and ADRs.
 
+The current repository snapshot contains the completed Phase 0 architecture foundation, including the initial FastAPI skeleton, configuration, Alembic scaffolding, health endpoints, Docker Compose setup, and the initial test harness.
+
 The context/cycles directory contains execution planning and historical implementation records. The stable ROADMAP should not become an implementation diary.

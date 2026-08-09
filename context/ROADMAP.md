@@ -2,6 +2,8 @@
 
 ## Phase 0 — Architecture and Repository Foundation
 
+Status: completed in the current repository snapshot.
+
 Objective: create a coherent, executable project skeleton with explicit architectural boundaries.
 
 ### Scope

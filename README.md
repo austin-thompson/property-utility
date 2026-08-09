@@ -4,16 +4,17 @@ Property Utility is an API-first geographic and property intelligence engine for
 
 ## Status
 
-This repository is in early Phase 0 development. The current focus is repository setup, architecture documentation, configuration, and a small executable API skeleton.
+This repository is now in a completed Phase 0 state for the initial architecture bootstrap. The current implementation includes a runnable FastAPI skeleton, config management, async database wiring, Alembic scaffolding, health endpoints, and the core documentation set.
 
 ## Capabilities in this phase
 
 - FastAPI application skeleton
 - PostgreSQL/PostGIS-ready configuration
-- SQLAlchemy async database wiring
+- async SQLAlchemy database wiring
 - Alembic baseline structure
-- health endpoints
+- health endpoints at /health/live and /health/ready
 - quality tooling via Ruff, mypy, and pytest
+- Docker Compose configuration for api and postgres services
 
 ## Architecture summary
 
@@ -29,10 +30,18 @@ make run
 
 ## Quality checks
 
+The following commands have been exercised successfully in the current repository snapshot:
+
 ```bash
 make lint
 make typecheck
 make test
+```
+
+To validate the Compose configuration locally, use:
+
+```bash
+docker compose config
 ```
 
 ## Context
