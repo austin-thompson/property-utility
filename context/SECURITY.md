@@ -1,6 +1,6 @@
 # Security
 
-## Phase 0 posture
+## Current posture
 
 - Environment-based secrets
 - .env excluded from Git

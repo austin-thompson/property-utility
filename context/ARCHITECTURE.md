@@ -44,3 +44,5 @@ Provider adapters handle HTTP communication, retries, timeouts, provider-specifi
 ## Geographic Domain Model
 
 Geography is foundational infrastructure. In the long term, entities may include Address, Coordinate, Property, CensusBlock, CensusBlockGroup, CensusTract, ZIPCode, Municipality, County, MetroArea, State, and SchoolDistrict. A property belongs to multiple overlapping geographic contexts.
+
+The current implementation includes a lightweight geographic-context slice that resolves an address into a normalized structure and stores the result in a repository-backed record for retrieval. It now also uses a small domain object, a provider boundary, and a lightweight geographic-observation endpoint to make that flow more explicit before introducing a richer domain model.

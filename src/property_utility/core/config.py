@@ -13,6 +13,7 @@ class Settings(BaseSettings):
         default="postgresql+asyncpg://property:property@localhost:5432/property_utility",
         alias="DATABASE_URL",
     )
+    geocoding_provider: str = Field(default="heuristic", alias="GEOCODING_PROVIDER")
 
 
 settings = Settings()
