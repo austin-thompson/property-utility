@@ -13,7 +13,7 @@ make typecheck
 
 The project uses PostgreSQL with PostGIS in Docker Compose. Migrations are managed with Alembic. Logs should remain structured and lightweight, with health checks and graceful shutdown behavior in mind.
 
-The current Phase 0 implementation includes the health endpoints and the initial database readiness check. The local workflow should be run from the repository root after copying .env.example to .env.
+The current implementation includes the health endpoints and the initial database readiness check. The local workflow should be run from the repository root after copying .env.example to .env.
 
 ## Configuration
 
@@ -25,4 +25,4 @@ The current repository snapshot has verified the Compose configuration and the l
 
 ## Future observability
 
-The current Phase 0 implementation is intentionally simple; future work can add richer observability and backup practices as the system grows.
+The current implementation is intentionally simple; future work can add richer observability and backup practices as the system grows.

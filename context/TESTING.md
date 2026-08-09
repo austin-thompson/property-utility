@@ -1,6 +1,6 @@
 # Testing
 
-Phase 0 tests cover the application skeleton, configuration, /health/live, /health/ready, and the database readiness behavior through a focused unit suite.
+The current test suite covers the application skeleton, configuration, /health/live, /health/ready, and the database readiness behavior through a focused unit suite.
 
 ## Test categories
 

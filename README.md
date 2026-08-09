@@ -4,15 +4,26 @@ Property Utility is an API-first geographic and property intelligence engine for
 
 ## Status
 
-This repository is now in a completed Phase 0 state for the initial architecture bootstrap. The current implementation includes a runnable FastAPI skeleton, config management, async database wiring, Alembic scaffolding, health endpoints, and the core documentation set.
+This repository now has an initial architecture foundation plus a first functional geographic-context slice, a small provider-boundary refinement, and a new geographic-observation endpoint. The current implementation includes a runnable FastAPI skeleton, configuration management, async database wiring, Alembic scaffolding, health endpoints, and a persisted address-to-geographic-context flow.
 
-## Capabilities in this phase
+## State snapshot
+
+- Current phase: Phase 5 — metrics and comparison foundation
+- Current focus: preserve the architectural foundation while introducing the first reusable comparison metric built on top of geographic context
+- What is working: FastAPI app skeleton, health endpoints, async database scaffolding, geographic-context resolution and retrieval, a first geographic-observation workflow, configurable provider selection between heuristic and HTTP-backed implementations, and a first comparison metric endpoint for geographic contexts
+- Next milestone: refine the first metric model and capture the next cycle plan in the cycle documentation before broadening the scope
+- Known gaps: no production provider integrations yet, the metric model remains intentionally lightweight, and live Postgres-backed readiness has not yet been exercised end to end
+
+## Current capabilities
 
 - FastAPI application skeleton
 - PostgreSQL/PostGIS-ready configuration
 - async SQLAlchemy database wiring
 - Alembic baseline structure
 - health endpoints at /health/live and /health/ready
+- geographic-context resolution and retrieval endpoints
+- geographic-observation creation through a lightweight observations API
+- persisted geographic-context records via a lightweight repository layer
 - quality tooling via Ruff, mypy, and pytest
 - Docker Compose configuration for api and postgres services
 

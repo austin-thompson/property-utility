@@ -1,11 +1,14 @@
 # API Design
 
-The future API namespace is /api/v1. Phase 0 implements only the health endpoints.
+The API namespace is /api/v1, and the current implementation exposes health endpoints plus a first geographic-context slice with a lightweight provider-backed domain model and a geographic-observations endpoint.
 
-## Phase 0 endpoints
+## Current endpoints
 
 - GET /health/live
 - GET /health/ready
+- POST /api/v1/geographic-context/resolve
+- GET /api/v1/geographic-context/{address}
+- POST /api/v1/observations/geographic-context
 
 ## Future endpoints
 
